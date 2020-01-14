@@ -1,0 +1,45 @@
+/*==============================================
+                    GOOGLE FONTS
+================================================*/
+@import url('https://fonts.googleapis.com/css?family=Assistant:400,700&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Oswald:400,700&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: $body-background;
+    font-family: 'Assistant', sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.4;
+    color: #2D2926;
+    overflow-x: hidden;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Oswald', 'arial', sans-serif;
+}
+
+section, footer, header {
+    overflow: hidden;
+}
+
+a {
+    &:hover {
+        cursor: pointer;
+    }
+}
+
+.btn {
+    &:focus {
+        box-shadow: none;
+    }
+    &:active {
+        box-shadow: none;
+    }
+}

@@ -1,0 +1,214 @@
+/*==============================================
+                    HEADER
+================================================*/
+.header {
+    background: darken($color: $body-background, $amount: 5%);
+    border-bottom: solid .1rem $btn-background;
+    .navbar {
+        .navbar-brand {
+            color: $dark-color;
+            font-size: 1.2rem;
+            text-transform: uppercase;
+            font-weight: bold;
+        }
+        .navbar-nav {
+            .nav-item {
+                .nav-link {
+                    font-size: 1rem;
+                    position: relative;
+                    padding-right: .8rem;
+                    outline: none;
+                    color: #252525;
+                    letter-spacing: 1px;
+                    font-weight: bold;
+                    text-shadow: 0 0 2px rgba(255,255,255,0.3);
+                    transition: all .5s ease-in-out;
+
+                    &:hover {
+                        color: $btn-hover;
+                    }
+                }
+            }
+
+            .nav-item.active {
+                .nav-link {
+                    color: $btn-background;
+                }
+            }
+        }
+    }
+}
+
+.sticky {
+    position: fixed;
+    z-index: 1111;
+    width: 100%;
+    top: 0;
+    background: rgba(241, 232, 225, 1);
+    vertical-align: middle;
+
+    .navbar-brand {
+        img {
+            height: 50px;
+        }
+    }
+}
+
+/*==============================================
+                    SHOWCASE
+================================================*/
+.showcase {
+    background: url(../images/sowcase.jpg) no-repeat center center/cover;
+    overflow: hidden;
+    background-attachment: fixed;
+    .overlay {
+        background: rgba(0, 0, 0, .75);
+        height: 100%;
+    }
+
+    .top {
+        color: $body-background;
+        h1 {
+            font-weight: bold;
+            letter-spacing: .1rem;
+        }
+    }
+
+    .card {
+        background: $body-background;
+        .card-title {
+            color: $btn-hover;
+            letter-spacing: .1rem;
+        }
+        .card-text {
+            color: $btn-hover;
+        }
+
+        button {
+            position: relative;
+        }
+
+        .my-btn {
+            background: $btn-background;
+            background-image: url(../images/button-mask.png) !important;
+            background-repeat: no-repeat;
+            z-index: 1;
+            background-size: 100% 100%;
+            padding: .75rem 0;
+            color: white;
+            transition: background 300ms ease-out;
+
+            &:focus {
+                box-shadow: none;
+            }
+            &:hover {
+                background: $btn-hover;
+            }
+        }
+    }
+}
+
+/*==============================================
+                    FIXED-ICON
+================================================*/
+.icon {
+    position: fixed;
+    top: 35%;
+    left: 0;
+    width: 230px;
+    z-index: 1;
+    transform: translate(-160px, 0px);
+    transition: all .75s ease-in-out;
+    &:hover {
+        transform: translate(0, 0);
+    }
+    a {
+        font-family: 'Oswald';
+        font-weight: bold;
+        letter-spacing: .1rem;
+        text-decoration: none;
+        text-transform: uppercase;
+        text-align: right;
+        padding: 8px;
+        font-size: 22px;
+        color: $btn-background;
+        border-radius: 0 50px 50px 0;
+        i {
+            margin-left: 20px;
+            background: #fff;
+            width: 40px;
+            height: 40px;
+            text-align: center;
+            color: $btn-background;
+            line-height: 45px;
+            border-radius: 50%;
+        }
+    }
+    .call {
+        background: $btn-background;
+        color: white;
+    }
+}
+
+/*==============================================
+                    ITEMS
+================================================*/
+.card {
+    .card-body {
+        overflow: hidden;
+        img {
+            max-width: 100%;
+            transition: transform .5s ease;
+            &:hover {
+                transform: scale(1.1);
+                cursor: zoom-in;
+            }
+        }
+    }
+}
+
+/*==============================================
+                    FOOTER
+================================================*/
+.footer {
+    background: darken($color:$body-background, $amount: 5%);
+
+    .card {
+        .card-body {
+            .card-title {
+                font-weight: bold;
+            }
+            .navbar-nav {
+                .nav-item {
+                    .nav-link {
+                        color: #666;
+                        transition: all .5s ease-in-out;
+                        
+                        &:hover {
+                            color: $btn-hover;
+                        }
+                    }
+                }
+            }
+            .nav {
+                .nav-item {
+                    .nav-link {
+                        color: $btn-background;
+                        transition: all .5s ease-in-out;
+                        &:hover {
+                            color: $btn-hover;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    p {
+        color: #252525;
+        transition: all .5s ease-in-out;
+        &:hover {
+            color: $btn-hover;
+        }
+    }
+}

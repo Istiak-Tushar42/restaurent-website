@@ -1,0 +1,42 @@
+/*==============================================
+                        FAQ
+================================================*/
+.faq {
+    .card {
+        .card-title {
+            background: $btn-background;
+            background-image: url(../images/button-mask.png) !important;
+            background-repeat: no-repeat;
+            z-index: 1;
+            padding: .5rem 3rem;
+            border-radius: 30px;
+            color: white;
+            transition: background 300ms ease-out;
+            display: inline-block;
+            letter-spacing: .1rem;
+        }
+    }
+}
+
+/*==============================================
+                    RULES
+================================================*/
+.rules {
+    .card {
+        border: 0;
+        text-align: justify;
+    }
+
+    p.order {
+        background: $btn-background;
+        background-image: url(../images/button-mask.png) !important;
+        background-repeat: no-repeat;
+        z-index: 1;
+        padding: 1rem 3rem .8rem;
+        color: white;
+        transition: background 300ms ease-out;
+        display: inline-block;
+        letter-spacing: .1rem;
+        font-weight: bold;
+    }
+}

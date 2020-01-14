@@ -1,0 +1,52 @@
+@import "_variables";
+@import "_resettings.scss";
+@import "_home.scss";
+@import "_deals.scss";
+@import "_faq.scss";
+@import "_gift.scss";
+@import "_join.scss";
+@import "_menu.scss";
+@import "_contact.scss";
+@import "_password.scss";
+@import "_login.scss";
+@import "_cart.scss";
+@import "_forone.scss";
+
+// header {
+//     .navbar-nav {
+//         .nav-item {
+//             .nav-link {
+//                 font-size: .8rem;
+//             }
+//         }
+//     }
+// }
+
+.side-nav {
+    // position: fixed;
+    // right: 0;
+
+    .lead {
+        .qt-minus {
+            width: 15px;
+            height: 15px;
+            line-height: 47px;
+            &:hover {
+                background: $btn-background;
+                color: #fff;
+                cursor: pointer;
+            }
+        }
+    }
+}
+
+
+.qt-plus {
+	line-height: 50px;
+}
+
+
+
+@media (max-width: 768px) {
+    
+}

@@ -1,0 +1,17 @@
+.menu {
+    overflow: hidden;
+    .side-nav {
+        .card {
+            background: url(../images/sidenav-bg.png) no-repeat center center/cover;
+            background-size: 100% 100%;
+            border: 0;
+            position: sticky;
+            top: 70px;
+            padding-right: 10px;
+        }
+    }    
+}
+
+.footer {
+    overflow: hidden;
+}

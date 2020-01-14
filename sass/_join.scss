@@ -1,0 +1,70 @@
+/*==============================================
+                    JOIN
+================================================*/
+.banner {
+    overflow: hidden;
+    .card {
+        padding: 0;
+        .card-body {
+            padding: 0;
+            position: relative;
+            .banner-img {
+                width: 100%;
+            }
+            img {
+                border: none;
+                vertical-align: middle;
+                max-width: 100%;
+            }
+            .flour-bg {
+                position: absolute;
+                top: 0;
+                background-size: 100% 100%;
+                background-image: url(../images/hero-mask.png);
+                background-repeat: no-repeat;
+                z-index: 1;
+                width: 100%;
+                height: 100%;
+            }
+        }
+    }
+}
+
+/*==============================================
+                    BENEFITS
+================================================*/
+.benefits {
+    h3 {
+        letter-spacing: .1rem;
+    }
+    .card-deck {
+        .card {
+            background: transparent;
+            border: 0;
+            text-align: center;
+            .card-img-top {
+                width: 90px;
+                height: 90px;
+            }
+            img {
+                border: none;
+                vertical-align: middle;
+                max-width: 100%;
+                margin: auto;
+            }
+        }
+    }
+}
+
+/*==============================================
+                    JOIN
+================================================*/
+.join {
+    .card {
+        .card-body {
+            .important {
+                color: $btn-hover;
+            }
+        }
+    }
+}

@@ -1,0 +1,69 @@
+/*==============================================
+                    CONTACT FORM
+================================================*/
+.contact-form {
+    // LOCATION
+    .card {
+        .card-body {
+            .important {
+                color: $btn-background;
+            }
+        }
+    }
+
+    // CONTACT-FORM
+    .form-group {
+        .input {
+            border: solid 2px #b2b2b2;
+            position: relative;
+            &:after {
+                content: '';
+                background-image: url(../images/white-button-mask.png);
+                background-size: 100%;
+                position: absolute;
+                top: -2px;
+                left: -2px;
+                right: -2px;
+                bottom: -2px;
+            }
+
+            .form-control {
+                position: relative;
+                z-index: 1;
+                border: 0;
+                &:focus {
+                    box-shadow: none;
+                    border: 0;
+                }
+            }
+            textarea {
+                resize: none;
+            }
+        }
+        label {
+            color: $dark-color;
+            font-weight: bold;
+            span {
+                color: $btn-background;
+            }
+        }
+    }
+    .my-btn {
+        background: $btn-background;
+        background-image: url(../images/button-mask.png) !important;
+        background-repeat: no-repeat;
+        z-index: 1;
+        background-size: 100% 100%;
+        padding: .75rem 0;
+        color: white;
+        transition: background 300ms ease-out;
+        font-weight: bold;
+
+        &:focus {
+            box-shadow: none;
+        }
+        &:hover {
+            background: $btn-hover;
+        }
+    }
+}
